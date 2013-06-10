@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>SHARE YOUR WORLD</title>
+    <title>SHARE YOUR WORLD - SEARCH RESULTS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -17,8 +17,10 @@
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
 
-   
+    </script>
   </head>
 
   <body>
@@ -26,7 +28,8 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#">Share Your World</a>
+          <a class="brand" href="index.html">Share Your World</a>
+          
               <a href="sign-in.html"><button type="submit" class="btn pull-right">Sign in</button></a>
           </div><!--/.nav-collapse -->
         </div>
@@ -34,48 +37,52 @@
     </div>
 
     <div class="container">
-
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Share Your World</h1>
-        <br />
-        <p>
-        	<select>
-			  <option>Today</option>
-			  <option>This Week</option>
-			  <option>Next Week</option>
-			  <option>This Term</option>
-			  <option>Next Term</option>
-			</select>
- 			I would like to 
- 			<select>
-			  <option>Share</option>
-			  <option>Watch</option>
-			  <option>Teach</option>
-			</select>
- 			a 
- 			<select>
-			  <option>Science</option>
-			  <option>Maths</option>
-			  <option>English</option>
-			</select>
- 			lesson</p>
-        <p><a href="search-results.html" class="btn btn-primary btn-large">Go &raquo;</a></p>
+      <h2>Search Results</h2>
+      <div class="row">
+        <div class="span3">
+          <h3>Language</h3>
+          <select multiple="multiple">
+            <option>English</option>
+            <option>French</option>
+            <option>Chinese</option>
+            <option>Spanish</option>
+            <option>German</option>
+          </select>
+        </div>
+        <div class="span3">
+          <h3>Subject Level</h3>
+          <select multiple="multiple">
+            <option>Pre-School</option>
+            <option>Elementary School</option>
+            <option>Middle School</option>
+            <option>High School</option>
+            <option>College</option>
+          </select>
+        </div>
+        <div class="span3">
+          <h3>Country</h3>
+          <select multiple="multiple">
+            <option>USA</option>
+            <option>UK</option>
+            <option>France</option>
+            <option>China</option>
+            <option>Spain</option>
+          </select>
+        </div>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="span6">
-          <h2>Field Trip Event</h2>
+        <div class="span3">
+          <h3>Profile</h3>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-          <p><a class="btn" href="#">Register Interest &raquo;</a></p>
+          
+          <p><a class="btn btn-small" href="#">View Full Profile &raquo;</a></p>
+          <p><a class="btn btn-success" href="#">Make A Connection &raquo;</a></p>
         </div>
-        <div class="span6">
-          <h2>Latest Connections</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-          <p><a class="btn" href="#">Make Connection &raquo;</a></p>
+        <div class="span9">
+          <h3>Results Map</h3>
+            <div id="map-canvas"></div>
         </div>
       </div>
 
@@ -92,7 +99,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
+    <script src="assets/js/custom.js"></script>
 
   </body>
 </html>
