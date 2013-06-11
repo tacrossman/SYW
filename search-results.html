@@ -31,18 +31,45 @@
           <a class="brand" href="index.html">Share Your World</a>
           
               <a href="sign-in.html"><button type="submit" class="btn pull-right">Sign in</button></a>
+    <form class="navbar-search pull-right">
+          <input type="text" class="search-query" placeholder="Search">
+        </form>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
     <div class="container">
+      
       <h2>Search Results</h2>
-      <div class="row">
+
+        <p>
+          <select>
+        <option>Today</option>
+        <option>This Week</option>
+        <option>Next Week</option>
+        <option>This Term</option>
+        <option>Next Term</option>
+      </select>
+      I would like to 
+      <select>
+        <option>Share</option>
+        <option>Watch</option>
+        <option>Teach</option>
+      </select>
+      a 
+      <select>
+        <option>Science</option>
+        <option>Maths</option>
+        <option>English</option>
+      </select>
+      lesson          <a href="search-results.html" class="btn btn-primary btn-small">Go &raquo;</a></p>
+
+      <!--<div class="row">
         <div class="span3">
           <h3>Language</h3>
           <select multiple="multiple">
-            <option>English</option>
+            <option >English</option>
             <option>French</option>
             <option>Chinese</option>
             <option>Spanish</option>
@@ -69,22 +96,128 @@
             <option>Spain</option>
           </select>
         </div>
+        <div class="span3">
+          <h3>Other</h3>
+          <select multiple="multiple">
+            <option>Option1</option>
+            <option>Option2</option>
+            <option>Option3</option>
+            <option>Option4</option>
+            <option>Option5</option>
+          </select>
+        </div>
       </div>
+    -->
 
       <!-- Example row of columns -->
-      <div class="row">
-        <div class="span3">
-          <h3>Profile</h3>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          
-          <p><a class="btn btn-small" href="#">View Full Profile &raquo;</a></p>
-          <p><a class="btn btn-success" href="#">Make A Connection &raquo;</a></p>
+<div>
+<div class="bs-docs-example">
+    <ul id="myTab" class="nav nav-tabs">
+    <li class="active"><a href="#home" data-toggle="tab">Results List View</a></li>
+    <li><a href="#profile" data-toggle="tab">Results Map View</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+
+
+
+<div id="header"></div>
+    <div id="nav">
+      <h4>Language</h4>
+      <ul class="langNav">
+        <li><a href="" data-filter="*">All</a></li>
+        <li><a href="" data-filter=".cat1">English</a></li>
+        <li><a href="" data-filter=".cat2">Spanish</a></li>
+        <li><a href="" data-filter=".cat3">French</a></li>
+      </ul>
+
+      <h4>Country</h4>
+      <ul class="langNav">
+        <li><a href="" data-filter="*">All</a></li>
+        <li><a href="" data-filter=".cat1">English</a></li>
+        <li><a href="" data-filter=".cat2">Spanish</a></li>
+        <li><a href="" data-filter=".cat3">French</a></li>
+      </ul>
+
+      <h4>Subject Module</h4>
+      <ul class="langNav">
+        <li><a href="" data-filter="*">All</a></li>
+        <li><a href="" data-filter=".cat1">English</a></li>
+        <li><a href="" data-filter=".cat2">Spanish</a></li>
+        <li><a href="" data-filter=".cat3">French</a></li>
+      </ul>
+    </div>
+
+
+<div id="content">
+            <div class="box cat1 cat3">
+                <h2 class="box-title">Lorem Ipsum</h2>
+                <div class="box-text">
+                    Urna vut, eros aliquet sagittis augue? Augue adipiscing duis? Et a placerat, magna enim? Lacus sit. Nunc montes tristique purus auctor. Nascetur? Vut amet, phasellus pulvinar et odio. Ut aliquet integer sed enim ac amet nunc? Tincidunt sit, cum ridiculus, placerat cum, vut magna ridiculus ut phasellus ridiculus? Eu hac, mattis adipiscing, montes adipiscing urna montes rhoncus!
+                </div>
+            </div>
+ 
+            <div class="box cat1">
+                <h2 class="box-title">Lorem Ipsum</h2>
+                <div class="box-text">
+                    Urna vut, eros aliquet sagittis augue? Augue adipiscing duis? Et a placerat, magna enim? Lacus sit. Nunc montes tristique purus auctor. Nascetur? Vut amet, phasellus pulvinar et odio. Ut aliquet integer sed enim ac amet nunc? Tincidunt sit, cum ridiculus, placerat cum, vut magna ridiculus ut phasellus ridiculus? Eu hac, mattis adipiscing, montes adipiscing urna montes rhoncus! Odio placerat pellentesque risus urna elit, odio phasellus, rhoncus, est ridiculus purus etiam, penatibus integer!
+                </div>
+            </div>
+ 
+            <div class="box cat2 cat3">
+                <h2 class="box-title">Lorem Ipsum</h2>
+                <div class="box-text">
+                    Urna vut, eros aliquet sagittis augue? Augue adipiscing duis? Et a placerat, magna enim? Lacus sit. Nunc montes tristique purus auctor. Nascetur?
+                </div>
+            </div>
+ 
+            <div class="box cat1">
+                <h2 class="box-title">Lorem Ipsum</h2>
+                <div class="box-text">
+                    Amet dolor? Diam cras ac quis a ut, augue massa cursus natoque cursus in sociis rhoncus, scelerisque mus ac. Pellentesque odio rhoncus, aliquet tempor? Nisi cursus lorem tincidunt penatibus eu scelerisque! Scelerisque mid rhoncus turpis eros? Nunc rhoncus in turpis, mus, nec augue, odio, mid tempor aliquam, ultricies.
+                </div>
+            </div>
+            <div class="box cat2">
+                <h2 class="box-title">Lorem Ipsum</h2>
+                <div class="box-text">
+                    Diam cras ac quis a ut, augue massa cursus natoque cursus in sociis rhoncus, scelerisque mus ac. Pellentesque odio rhoncus, aliquet tempor? Nisi cursus lorem tincidunt penatibus eu scelerisque! Scelerisque mid rhoncus turpis eros? Nunc rhoncus in turpis, mus, nec augue, odio, mid tempor aliquam, ultricies.
+                </div>
+            </div>
+            <div class="box cat2">
+                <h2 class="box-title">Lorem Ipsum</h2>
+                <div class="box-text">
+                    Urna vut, eros aliquet sagittis augue? Augue adipiscing duis? Et a placerat, magna enim? Lacus sit. Nunc montes tristique purus auctor. Nascetur? Vut amet, phasellus pulvinar et odio. Pellentesque odio rhoncus, aliquet tempor? Nisi cursus lorem tincidunt penatibus eu scelerisque! Scelerisque mid rhoncus turpis eros? Nunc rhoncus in turpis, mus, nec augue, odio, mid tempor aliquam, ultricies.
+                </div>
+            </div>
+ 
+            <div class="box cat2 cat3">
+                <h2 class="box-title">Lorem Ipsum</h2>
+                <div class="box-text">
+                    Urna vut, eros aliquet sagittis augue? Augue adipiscing duis? Et a placerat, magna enim? Lacus sit.
+                </div>
+            </div>
+ 
+            <div class="box cat1">
+                <h2 class="box-title">Lorem Ipsum</h2>
+                <div class="box-text">
+                    Amet dolor? Diam cras ac quis a ut, augue massa cursus natoque cursus in sociis rhoncus, scelerisque mus ac. Pellentesque odio rhoncus, aliquet tempor? Nisi cursus lorem tincidunt penatibus eu scelerisque! Scelerisque mid rhoncus turpis eros? Nunc rhoncus in turpis, mus, nec augue, odio, mid tempor aliquam, ultricies.
+                </div>
+            </div>
+ 
+            <div class="box cat2 cat3">
+                <h2 class="box-title">Lorem Ipsum</h2>
+                <div class="box-text">
+                    Urna vut, eros aliquet sagittis augue? Augue adipiscing duis? Et a placerat, magna enim? Lacus sit. Nunc montes tristique purus auctor. Amet dolor? Diam cras ac quis a ut, augue massa cursus natoque cursus in sociis rhoncus, scelerisque mus ac. Pellentesque odio rhoncus, aliquet tempor? Nisi cursus lorem tincidunt penatibus eu scelerisque! Scelerisque mid rhoncus turpis eros? Nunc rhoncus in turpis, mus, nec augue, odio, mid tempor aliquam, ultricies.
+                </div>
+            </div>
         </div>
-        <div class="span9">
-          <h3>Results Map</h3>
-            <div id="map-canvas"></div>
-        </div>
-      </div>
+
+    </div>
+    <div class="tab-pane fade" id="profile">
+        <div id="map_canvas"></div>   
+    </div>
+</div>
+
 
       <hr>
 
@@ -98,8 +231,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/jquery.isotope.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
 
   </body>
 </html>
