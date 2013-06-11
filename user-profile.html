@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>SHARE YOUR WORLD - SIGN-IN </title>
+    <title>SHARE YOUR WORLD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -17,10 +17,8 @@
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script>
 
-    </script>
+   
   </head>
 
   <body>
@@ -29,29 +27,18 @@
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="index.html">Share Your World</a>
+
+              <a href="sign-in.html"><button type="submit" class="btn pull-right">Sign in</button></a>
+				<form class="navbar-search pull-right">
+				  <input type="text" class="search-query" placeholder="Search">
+				</form>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-<div class="container">
-
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <span id="signinButton">
-        <span
-          class="g-signin"
-          data-callback="signinCallback"
-          data-clientid="CLIENT_ID"
-          data-cookiepolicy="single_host_origin"
-          data-requestvisibleactions="http://schemas.google.com/AddActivity"
-          data-scope="https://www.googleapis.com/auth/plus.login">
-        </span>
-      </span>
-      <br />
-        <button class="btn btn btn-block" type="submit">Register</button>
-      </form>
-
+    <div class="container">
+      <p>User Profile</p>
 
       <hr>
 
@@ -66,17 +53,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-   <!-- Place this asynchronous JavaScript just before your </body> tag -->
-    <script type="text/javascript">
-      (function() {
-       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-       po.src = 'https://apis.google.com/js/client:plusone.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-     })();
-    </script>
+
+
   </body>
 </html>
-
-
-
